@@ -3,32 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-  </head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
   <body>
       <p>Test Test Test</p>
-
-      <model-viewer src="Assets/LittlestTokyo.glb"
+    <div class="sect1">
+      <model-viewer 
+      src="Assets/LittlestTokyo.glb"
       ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
       poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
       alt="A 3D model of an astronaut"
       shadow-intensity="1"
       camera-controls
-      auto-rotate ar>
+      auto-rotate 
+      ar>
     </model-viewer>
-
-    <model-viewer src="Assets/Piano.glb"
-    shadow-intensity="1"
+</div>
+<div class="sect2">
+    <model-viewer 
+    src="Assets/Piano.glb"
     camera-controls
     auto-rotate ar></model-viewer>
+</div>
+<div class="sect3">
     <model-viewer src="Assets/anatomy_of_the_eye/scene.gltf"
     camera-controls
-    auto-rotate ar></model-viewer>
-  </body>
- 
-   <!-- 💁 Include both scripts below to support all browsers! -->
+    auto-rotate 
+    ar></model-viewer>
+</div>
+<div class="sect4">
+    <model-viewer src="Assets/tekeningEddy_wit.gltf"  
+    camera-controls
+    auto-rotate
+    ar></model-viewer> 
 
-  <!-- Loads <model-viewer> for modern browsers: -->
-    <script type="module"
+</div>
+
+</body>
+
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
 </script>
 
@@ -36,5 +52,6 @@
 <script nomodule
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
 </script>
+
 
 </html>

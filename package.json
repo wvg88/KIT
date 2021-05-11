@@ -4,7 +4,10 @@
   "description": "Website voor content van de kopgroep interactieve techniek MindLabs en ROC Tilburg",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+
   },
   "repository": {
     "type": "git",
