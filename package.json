@@ -1,0 +1,29 @@
+{
+  "name": "kit",
+  "version": "1.0.0",
+  "description": "Website voor content van de kopgroep interactieve techniek MindLabs en ROC Tilburg",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wvg88/KIT.git"
+  },
+  "keywords": [
+    "AR",
+    "VR",
+    "3D",
+    "Interactieve",
+    "Techniek"
+  ],
+  "author": "Wouter van Ginneken",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wvg88/KIT/issues"
+  },
+  "homepage": "https://github.com/wvg88/KIT#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
