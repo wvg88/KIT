@@ -1,10 +1,22 @@
 .sect1{
+    display: block;
+    margin:10% 20% 0%;
     width:900px;
     height:600px;
 }
 
 #redo{
-    width:100%;
+    width:100% !important;
+    height:600px;
+}
+.sect2{
+    margin: 10% 10% 0%;
+    width:900px;
+    height:600px;
+}
+#reactor{
+    background:burlywood;
+    width:100% !important;
     height:600px;
 }
 model-viewer{
