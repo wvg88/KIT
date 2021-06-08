@@ -14,6 +14,8 @@ button{
   }
 button[slot="hotspot-1"]{
     --min-hotspot-opacity: 0;
+    border-radius: 10px;
+    border:none;
     background-color: red;
   }
 
