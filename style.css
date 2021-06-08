@@ -3,7 +3,15 @@ model-viewer{
 
 }
 
-
+button{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    box-sizing: border-box;
+  }
 button[slot="hotspot-1"]{
     --min-hotspot-opacity: 0;
     background-color: red;
@@ -16,3 +24,7 @@ button[slot="hotspot-1"]{
     border-radius: 10px;
     padding: 10px;
   }
+    /* This keeps child nodes hidden while the element loads */
+    :not(:defined) > * {
+        display: none;
+      }
