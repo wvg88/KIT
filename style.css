@@ -4,7 +4,7 @@
     .sect2{margin: 0% 0% 15% !important;; width:100% !important;}
     .sect3{margin: 0% 0% 15% !important; width: 100% !important;}
     .caption{margin: 5% !important; text-align:left !important;}
-    #footer{padding:15% !important; height:400px !important;}
+    #footer{height:400px !important;}
   }
 
 html{
@@ -111,14 +111,15 @@ button[slot="hotspot-2"]{
 
   #footer{
         background:rgb(241, 241, 241);
+        text-align: center;
         position:relative;
         height:300px;
-        margin: 0% 0% -5% 0%;
-        padding-left:30%;
+        width:100%;
+        margin: 0% 0% -10%;
     }
     #footer > .svg {
         display:inline-flex;
-        padding:5% 5% 0% 5%;
+        padding:5% 5% 0%;
     }
    #footer > svg{
         opacity: 0.5;
