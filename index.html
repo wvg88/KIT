@@ -7,14 +7,15 @@
 
 </head>
   <body>
-      <p>KIT</p>
+      <div id="header">
+      <h1>Kit</h1>
+      <h2>Welkom op de testpagina van de kopgroep interactieve techniek. Deze kopgroep bestaat o.a. uit een groep docenten van het ROC Tilburg die experimenteren met nieuwe technieken en media voor het onderwijs zoals virtual reality en augmented reality. 
+          Hier kun je enkele voorbeelden en experimenten zien die gemaakt zijn door de leden.</h2>
+    </div>
     <div class="sect1">
       <model-viewer 
       id="redo"
       src="Assets/redo.glb"
-      ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-      poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
-      alt="A 3D model of an astronaut"
       shadow-intensity="1"
       camera-controls
       auto-rotate 
@@ -24,27 +25,25 @@
       </button>
 
       <button slot="hotspot-2" data-position="0 0.1 0" data-normal="0 0 1"></button>
-    </model-viewer>
+    </model-viewer> <div class="caption"><p>3D model door Arie Vissers</p></div>
 </div>
 <div class="sect2">
-    <model-viewer id="reactor"
+    <model-viewer 
+    id="reactor"
     src="Assets/modelzover/Reactor_test_assembly.gltf"
     shadow-intensity="1"
     camera-controls
     auto-rotate ar></model-viewer>
+    <div class="caption"><p>3D model door Elmo Arrias </p></div>
 </div>
 <div class="sect3">
-    <model-viewer src="Assets/anatomy_of_the_eye/scene.gltf"
+    <model-viewer
+    id="oog"
+    src="Assets/anatomy_of_the_eye/scene.gltf"
     camera-controls
     auto-rotate 
     ar></model-viewer>
-</div>
-<div class="sect4">
-    <model-viewer src="Assets/redo.glb"  
-    camera-controls
-    auto-rotate
-    ar></model-viewer> 
-
+    <div class="caption"><p>Anatomisch model van het oog</p></div>
 </div>
 
 </body>
