@@ -2,3 +2,17 @@ model-viewer{
     background-color: azure;
 
 }
+
+
+button[slot="hotspot-1"]{
+    --min-hotspot-opacity: 0;
+    background-color: red;
+  }
+
+#annotation{
+    background-color: #fff;
+    position: absolute;
+    transform: translate(10px, 10px);
+    border-radius: 10px;
+    padding: 10px;
+  }
