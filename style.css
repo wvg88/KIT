@@ -24,10 +24,7 @@ body{
      max-width: 900px;
      margin:10% 20%;
  }
-.container{
-    width:100% !important;
-    height:100% !important;
-}
+
 .sect1{
     display: block;
     margin:10% 20% 0%;
@@ -102,3 +99,38 @@ button[slot="hotspot-2"]{
     :not(:defined) > * {
         display: none;
       }
+
+  #footer{
+        background:rgb(241, 241, 241);
+        position:relative;
+        height:300px;
+        margin: 0% 0% -5% 0%;
+        padding-left:30%;
+    }
+    #footer > .svg {
+        display:inline-flex;
+        padding:5% 5% 0% 5%;
+    }
+   #footer > svg{
+        opacity: 0.5;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
+      #footer > svg:hover {
+        opacity: 1;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
+ 
+      .mindlabs .st0{fill:none; stroke:#777;}
+      .mindlabs .st1{fill:#777;}
+      .mindlabs .st2{fill:#777;}
+  
+      .mindlabs:hover .st0{fill:none;stroke:#CD1316;stroke-width:2;stroke-miterlimit:10;}
+      .mindlabs:hover .st1{fill:#E5007D;}
+      .mindlabs:hover .st2{fill:#CD1316;}
+  
+      .roc{fill:#999;}
+      .roc:hover .R{fill:rgb(253, 0, 164);}
+      .roc:hover .O{fill:rgb(253, 0, 164);}
+      .roc:hover .C{fill:rgb(253, 0, 164);}
