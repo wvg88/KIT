@@ -1,7 +1,14 @@
 html{
-    margin:0px !important;
     width:100%;
 
+}
+body{
+    margin: 0 !important;
+    font-size:
+}
+.container{
+    width:100% !important;
+    height:100% !important;
 }
 .sect1{
     display: block;
