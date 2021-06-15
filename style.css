@@ -3,6 +3,7 @@
     .sect1{margin: 0% 0% 15% !important; width:100% !important;}
     .sect2{margin: 0% 0% 15% !important;; width:100% !important;}
     .sect3{margin: 0% 0% 15% !important; width: 100% !important;}
+    .sect4{margin: 0% 0% 15% !important; width: 100% !important;}
     .caption{margin: 5% !important; text-align:left !important;}
     #footer{height:400px !important;}
   }
@@ -66,9 +67,12 @@ body{
     width:900px;
 }
 .sect4{
-    margin: 10% 10%;
+    margin: 10% 50%;
     height:600px;
     width:900px;
+}
+.sect4 > .caption{
+    text-align:left !important;
 }
 #oog{
     background-color: darkcyan;
