@@ -154,33 +154,23 @@ model-viewer{
 
 }
 
-button{
-    font-size: 10px;
+
+.annotation{
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px;
+    color: rgba(0, 0, 0, 0.8);
     display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: blue;
-    box-sizing: border-box;
-  }
-button[slot="hotspot-1"]{
-    --min-hotspot-opacity: 0;
-    border-radius: 10px;
-    border:none;
-    background-color: red;
-  }
-
-button[slot="hotspot-2"]{
-    background-color:blue;
-}
-
-#annotation{
-    background-color: #fff;
+    font-family: Futura, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    left: calc(100% + 1em);
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
     position: absolute;
-    transform: translate(10px, 10px);
-    border-radius: 10px;
-    padding: 10px;
+    top: 50%;
+    width: max-content;
   }
     /* This keeps child nodes hidden while the element loads */
     :not(:defined) > * {
