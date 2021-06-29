@@ -154,6 +154,17 @@ model-viewer{
 
 }
 
+button{
+    font-size: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 100, 100);
+    box-sizing: border-box;
+  }
+
 
 .annotation{
     background: rgb(255, 255, 255);
