@@ -193,7 +193,7 @@ button{
       transition: opacity 0.3s;
   }
   .annotation-wrapper.hide ::slotted(*){
-      opacity:var(--min-hotspot-opacity,0.0);
+      opacity:var(--min-hotspot-opacity,0.0) !important;
   }
     /* This keeps child nodes hidden while the element loads */
     :not(:defined) > * {
