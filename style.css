@@ -189,8 +189,11 @@ button{
     top: 50%;
     width: max-content;
   }
-  .annotation:not(:defined) {
-      opacity:0;
+  .annotation-wrapper ::slotted(*){
+      transition: opacity 0.3s;
+  }
+  .annotation-wrapper.hide ::slotted(*){
+      opacity:var(--min-hotspot-opacity,0.0);
   }
     /* This keeps child nodes hidden while the element loads */
     :not(:defined) > * {
