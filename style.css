@@ -31,7 +31,7 @@ body{
      letter-spacing: 0.05em;
  }
  h4{
-   color:fuchsia;
+   color:#555;
    text-decoration: underline;
    font-size:1.3rem;
    line-height:1.4em;
@@ -40,6 +40,7 @@ body{
  }
  .no-wrap{
    white-space: nowrap;
+   max-width:900px;
  }
  #KIT{
   color:fuchsia;
