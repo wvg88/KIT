@@ -39,13 +39,13 @@ body{
    letter-spacing: 0.05em;
  }
  .no-wrap{
-   white-space: nowrap;
    max-width:900px;
  }
  #KIT{
   color:fuchsia;
   text-decoration: underline;
   display:inline;
+  white-space: nowrap;
 
  }
  #header{
