@@ -45,6 +45,8 @@ body{
  #KIT{
   color:fuchsia;
   text-decoration: underline;
+  display:inline;
+
  }
  #header{
      max-width: 900px;
