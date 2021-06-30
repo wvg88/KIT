@@ -1,9 +1,9 @@
 @media only screen and (max-width: 600px) {
     #header{margin: 5% 5% 15% !important;}
-    .sect1{margin: 0% 0% 15% !important; width:100% !important;}
-    .sect2{margin: 0% 0% 15% !important;; width:100% !important;}
-    .sect3{margin: 0% 0% 15% !important; width: 100% !important;}
-    .sect4{margin: 0% 0% 15% !important; width: 100% !important;}
+    .sect1{margin: 0% 0% 20% !important; width:100% !important;}
+    .sect2{margin: 0% 0% 25% !important;; width:100% !important;}
+    .sect3{margin: 0% 0% 25% !important; width: 100% !important;}
+    .sect4{margin: 0% 0% 25% !important; width: 100% !important;}
     .caption{margin: 5% !important; text-align:left !important;}
     #footer{height:400px !important;}
   }
