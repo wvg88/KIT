@@ -30,6 +30,17 @@ body{
      font-weight:100;
      letter-spacing: 0.05em;
  }
+ h4{
+   color:fuchsia;
+   text-decoration: underline;
+   font-size:1.3rem;
+   line-height:1.4em;
+   font-weight:200;
+   letter-spacing: 0.05em;
+ }
+ h5{
+   color:#000;
+ }
  #header{
      max-width: 900px;
      margin:10% 20%;
