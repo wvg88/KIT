@@ -77,6 +77,7 @@
   <div class="caption"><p>Interactieve film over een cylindermeting van Tim Waals, docent Autotechniek</p></div>
 </div>
 <div class="sect5">
+  
 
 </div>
 
@@ -141,9 +142,9 @@
 
 
 <!-- Loads <model-viewer> for modern browsers: -->
-<!---<script type="module"
+<script type="module"
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-</script>-->
+</script>
 
 <script type="module">
   const body = document.body;
@@ -165,7 +166,7 @@
     body.appendChild(focusVisible);
   };
 
-  body.addEventListener('mouseover', onInteraction, {once:true});
+  //body.addEventListener('mouseover', onInteraction, {once:true});
   body.addEventListener('touchmove', onInteraction, {once:true});
   body.addEventListener('scroll', onInteraction, {once:true});
   body.addEventListener('keydown', onInteraction, {once:true});
