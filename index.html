@@ -7,11 +7,37 @@
 
 </head>
   <body>
+    
+   
       <div id="header">
       <h1>Kit</h1>
-      <span class="no-wrap"><h2>Welkom op de testpagina van de <div id="KIT">Kopgroep Interactieve Techniek</div>. Deze kopgroep bestaat o.a. uit een groep docenten van het ROC Tilburg die experimenteren met nieuwe technologie en media voor het MBO zoals virtual reality en augmented reality. 
-          Hier kun je enkele voorbeelden en experimenten zien die gemaakt zijn door de leden. Je kunt de 3D modellen op je telefoon in augmented reality zien.</h2></span>
+      <span class="no-wrap"><h2>Welkom op de testpagina van de <div id="KIT">Kopgroep Interactieve Technologie</div>. Deze kopgroep bestaat o.a. uit een groep docenten van het ROC Tilburg die experimenteren met nieuwe technologie en media voor het MBO zoals virtual reality en augmented reality. 
+          Hier kun je enkele voorbeelden en experimenten zien die gemaakt zijn door de leden. Je kunt sommige 3D modellen op je telefoon in augmented reality zien. Wat we met deze experimenten willen bereiken zijn manieren om leren effectiever en aantrekkelijk te maken voor het onderwijs van nu en de toekomst.</h2></span>
     </div>
+
+
+
+   <button class="sun"></button> <div id="deelnemers" class="collapsible">Deelnemers
+   <br>
+    
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" id="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="20px" height="29.2px" viewBox="0 0 20 29.2" style="enable-background:new 0 0 20 29.2;" xml:space="preserve">
+    <style type="text/css">
+      .st01{fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
+      .st02{fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;}
+    </style>
+    <g>
+      <line class="st01" x1="10" y1="1.2" x2="10" y2="27.2"/>
+      <polyline class="st02" points="18,15.4 10,27.2 2.1,15.4 	"/>
+    </g>
+    </svg>
+
+
+
+   </div> <ul><a href="Elmo.html"><li>Elmo Arrias</li></a><li>Tim Waals</li><li>Peter Kraneburg</li><li>Linda van Hout</li>
+    <li>Joyce Küchler-Rasenberg</li><li>Joost van Puijenbroek</li><li>Ibe van Aken</li><li>Kees Vrieswijk</li><li>Rudy Schuurmans</li><li>Guus Vanhautem</li><li>Wouter van Ginneken</li><li>Erdinç Sacan</li><br></ul>
 
 <div class="sect1">
     <model-viewer 
@@ -32,7 +58,7 @@
 </div>
 <div class="sect2">
      
-  <model-viewer 
+  <!--<model-viewer 
   id="piano"
   src="Assets/Piano.glb"
   shadow-intensity="1"
@@ -42,12 +68,15 @@
   <div class="progress-bar" slot="progress-bar">
     <div class="update-bar"></div>
   </div>
-</model-viewer> <div class="caption"><p>Tekening in VR door Wouter van Ginneken, Docent ICT & Mediatechnologie</p></div>
+</model-viewer> --> 
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/636205617?h=6dbd6eb42a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Drawing in VR"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div class="caption"><p>Tekenen in VR door Wouter van Ginneken, docent ICT & Mediatechnologie</p></div>
 </div>
 <div class="sect3">
     <model-viewer
     id="oog"
     src="Assets/pick_and_place.glb"
+    ios-src="Assets/pick_and_place2.usdz"
     camera-controls
     auto-rotate 
     ar-modes="webxr scene-viewer quick-look"
@@ -134,10 +163,10 @@
 
 
 <!-- Loads <model-viewer> for modern browsers: -->
-<!-- <script type="module"
+ <!--<script type="module"
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-</script>
--->
+</script>-->
+
 <script type="module">
   const body = document.body;
   let loaded = false;
@@ -172,15 +201,37 @@
     }
   };
 
-  document.querySelector('#piano').addEventListener('progress', onProgress);
+  //document.querySelector('#piano').addEventListener('progress', onProgress);
   document.querySelector('#reactor').addEventListener('progress', onProgress);
   document.querySelector('#oog').addEventListener('progress', onProgress);
+
+
+</script>
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var arrow = document.getElementById("arrow");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+      arrow.style.transform = "rotateZ(0deg)";
+    } else {
+      arrow.style.transform = "rotateZ(180deg)";
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
 </script>
 
 <!-- Loads <model-viewer> for old browsers like IE11: -->
-<script nomodule
-    src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-</script>
+<!--<script 
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script> -->
 
 
 </html>
