@@ -6,6 +6,7 @@
     .sect4{margin: 0% 0% 25% !important; width: 100% !important;}
     .caption{margin: 5% !important; text-align:left !important;}
     #footer{height:400px !important;}
+    .collapsible{top:50px !important;}
   }
 
 html{
@@ -38,6 +39,10 @@ body{
    font-weight:200;
    letter-spacing: 0.05em;
  }
+ a{
+   text-decoration: none;
+   
+ }
  .no-wrap{
    max-width:900px;
  }
@@ -52,12 +57,102 @@ body{
      max-width: 900px;
      margin:10% 20%;
  }
+#deelnemers{
+  z-index: 10;
+  position:fixed;
+  right:10%;
+  top:4%;
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 2em;
+}
+ .collapsible{
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+ }
+ .sun{
+  z-index: 10;
+  width:80px;
+  height:80px;
+  border-radius: 40px;
+  position: fixed;
+  right:3%;
+  top:3%;
+ }
+ #arrow{
+   transition: transform 0.2s ease-out;
+ }
+ #arrow_back{
+   position:fixed;
+   top:10%;
+   left:10%; 
+ }
+ #arrow:active{
+  transform:rotateZ(180);
+  
+ }
+ ul{
+   z-index: 10;
+   position: fixed;
+   top:10%;
+   right:6%;
+   padding:10px 20px 3px 20px;
+   list-style: none;
+   line-height: 1.5em;
+   background-color:palegreen;
+   max-height: 0;
+   width:fit-content;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+   text-align:center;
+ }
+ ul:active{
+   background-color: darkturquoise;
+ }
 
 .sect1{
     display: block;
     margin:10% 20% 0%;
     width:900px;
     height:600px;
+}
+.sect1 > img{
+  width:fit-content;
+}
+
+.sect2{
+  position: relative;
+  margin: 10% 50%;
+  width:800px;
+  height:800px;
+}
+.sect2 > img{
+  width: 100%;
+}
+.vp-title {
+display:none !important;
+}
+.sect2 > .caption{
+  text-align:left !important;
+  
+}
+
+.sect3{
+  margin: 10% 10%;
+  height:600px;
+  width:900px;
+}
+.sect3 > img{
+  width: 100%;
+}
+.sect4{
+  margin: 10% 20%;
+  height:600px;
+  width:900px;
+}
+.sect4 > .caption{
+  text-align:left !important;
 }
 .caption{
     text-align: right;
@@ -135,36 +230,16 @@ body{
     width:100%;
     height:100%;
 }
-.sect2{
-    margin: 10% 50%;
-    width:900px;
-    height:600px;
-}
-.sect2 > .caption{
-    text-align:left !important;
-}
-#reactor{
-    background:burlywood;
-    width:100%;
-    height:100%;
-}
-.sect3{
-    margin: 10% 10%;
-    height:600px;
-    width:900px;
-}
-.sect4{
-    margin: 10% 20%;
-    height:600px;
-    width:900px;
-}
-.sect4 > .caption{
-    text-align:left !important;
-}
+
 #oog{
     background-color: darkcyan;
     width:100%;
     height:100%;
+}
+#reactor{
+  background:burlywood;
+  width:100%;
+  height:100%;
 }
 
 model-viewer{
@@ -219,6 +294,8 @@ button{
       }
 
   #footer{
+        top:50vh;
+        
         background:rgb(241, 241, 241);
         text-align: center;
         position:relative;
