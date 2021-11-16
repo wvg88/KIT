@@ -153,6 +153,11 @@ display:none !important;
 .sect4 > .caption{
   text-align:left !important;
 }
+.sect5{
+  margin: 10% 40% 0%;
+  height: 500px;
+  width: 900px;
+}
 .caption{
     text-align: right;
 }
@@ -239,6 +244,11 @@ display:none !important;
   background:burlywood;
   width:100%;
   height:100%;
+}
+#hart{
+  background:cornflowerblue;
+  width:100%;
+  height: 100%;
 }
 
 model-viewer{
@@ -328,3 +338,13 @@ button{
       .roc:hover .R{fill:rgb(253, 0, 164);}
       .roc:hover .O{fill:rgb(253, 0, 164);}
       .roc:hover .C{fill:rgb(253, 0, 164);}
+
+      .instagram .st0{fill:none;}
+      .instagram .st1{fill:none;}
+      .instagram .st2{fill:#777;}
+      .instagram .st3{fill:none !important;}
+
+      .instagram:hover .st0{fill:url(#SVGID_1_);}
+      .instagram:hover .st1{fill:url(#SVGID_00000034059016310992093070000009086971230026657716_);}
+      .instagram:hover .st2{fill:#FFF;}
+      .instagram:hover .st3{fill:url(#SVGID_00000028319274185899319320000002368498498945913002_);}
