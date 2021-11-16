@@ -125,7 +125,6 @@ body{
   position: relative;
   margin: 10% 50%;
   width:800px;
-  height:800px;
 }
 .sect2 > img{
   width: 100%;
@@ -147,7 +146,7 @@ display:none !important;
   width: 100%;
 }
 .sect4{
-  margin: 10% 20%;
+  margin: 0% 20%;
   height:600px;
   width:900px;
 }
@@ -294,14 +293,13 @@ button{
       }
 
   #footer{
-        top:50vh;
+        top:25vh;
         
         background:rgb(241, 241, 241);
         text-align: center;
         position:relative;
         height:300px;
         width:100%;
-        margin: 0% 0% -10%;
     }
     #footer > .svg {
         display:inline-flex;
