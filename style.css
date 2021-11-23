@@ -54,6 +54,9 @@ body{
   white-space: nowrap;
 
  }
+ #KIT > a{
+   color:fuchsia;
+ }
  #header{
      max-width: 900px;
      margin:10% 20%;
