@@ -159,6 +159,9 @@ display:none !important;
   height: 500px;
   width: 900px;
 }
+.sect5 > .caption{
+  text-align: left !important;
+}
 .caption{
     text-align: right;
 }
