@@ -1,36 +1,45 @@
 @media only screen and (max-width: 600px) {
     #header{margin: 5% 5% 15% !important;}
-    .sect1{margin: 0% 0% 20% !important; width:100% !important;}
+    h1{font-size:5rem !important; word-break:break-all;}
+    h2{font-size:1.1rem !important;}
+    .sect1{margin: 0% 0% 25% !important; width:100% !important;}
     .sect2{margin: 0% 0% 25% !important;; width:100% !important;}
     .sect3{margin: 0% 0% 25% !important; width: 100% !important;}
     .sect4{margin: 0% 0% 25% !important; width: 100% !important;}
     .sect5{margin: 0% 0% 25% !important; width:100% !important;}
-    .caption{margin: 5% !important; text-align:left !important;}
+    .caption{margin: 5% !important; text-align: left !important;}
     #footer{height:400px !important;}
-    .collapsible{top:50px !important;}
+    #deelnemers{top:1% !important; font-size: 1.1rem !important;}
+    #arrow_back{width:10%; top:1% !important; z-index: 10;}
+    ul{right:3% !important;font-size:0.8rem;letter-spacing: 0.1em; padding:3px 1px 1px 1px !important;}
+    .Pont{height:300px;width:150px !important;}
   }
 
 html{
-    width:100%;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.1em;
+    width:100%; 
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+
+
 
 }
 body{
     margin: 0 !important;
 }
  h1{
+     font-family: neue-haas-grotesk-display, sans-serif;
      font-size:5rem;
      letter-spacing:0.2em;
-     font-weight: 800;
+     font-weight: 600;
      text-transform: uppercase;
  }
  h2{
      color:#919191;
      font-size:1.3rem;
      line-height: 1.4em;
-     font-weight:100;
-     letter-spacing: 0.05em;
+     font-weight: 50;
+     letter-spacing: 0.04em;
  }
  h4{
    color:#555;
@@ -99,7 +108,7 @@ body{
  ul{
    z-index: 10;
    position: fixed;
-   top:10%;
+   top:100px;
    right:6%;
    padding:10px 20px 3px 20px;
    list-style: none;
@@ -120,6 +129,7 @@ body{
     margin:10% 20% 0%;
     width:900px;
     height:600px;
+    text-align: right;
 }
 .sect1 > img{
   width:fit-content;
@@ -136,15 +146,13 @@ body{
 .vp-title {
 display:none !important;
 }
-.sect2 > .caption{
-  text-align:left !important;
-  
-}
+
 
 .sect3{
   margin: 10% 10%;
   height:600px;
   width:900px;
+  text-align: right;
 }
 .sect3 > img{
   width: 100%;
@@ -154,20 +162,14 @@ display:none !important;
   height:600px;
   width:900px;
 }
-.sect4 > .caption{
-  text-align:left !important;
-}
+
 .sect5{
   margin: 10% 40% 0%;
   height: 500px;
   width: 900px;
 }
-.sect5 > .caption{
-  text-align: left !important;
-}
-.caption{
-    text-align: right;
-}
+
+
     /* This keeps child nodes hidden while the element loads, except the poster */
     :not(:defined) > :not(.poster) {
         display: none;
