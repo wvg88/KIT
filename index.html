@@ -2,60 +2,115 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <title>Kopgroep Interactieve Technologie - ROC Tilburg</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gcr4nkb.css">
+    <link rel="shortcut icon" type="image/png" href="/Assets/favico.png"/>
+
 
 </head>
   <body>
+    
+   
       <div id="header">
       <h1>Kit</h1>
-      <h2>Welkom op de testpagina van de kopgroep interactieve techniek. Deze kopgroep bestaat o.a. uit een groep docenten van het ROC Tilburg die experimenteren met nieuwe technieken en media voor het onderwijs zoals virtual reality en augmented reality. 
-          Hier kun je enkele voorbeelden en experimenten zien die gemaakt zijn door de leden. Je kunt de modellen op je telefoon in augmented reality zien.</h2>
+      <span class="no-wrap"><h2>Welkom op de testpagina van de <div id="KIT">Kopgroep Interactieve Technologie</div>. Deze kopgroep bestaat o.a. uit een groep docenten van het ROC Tilburg die experimenteren met nieuwe technologie en media voor het MBO zoals virtual reality en augmented reality. 
+          Hier kun je enkele voorbeelden en experimenten zien die gemaakt zijn door de leden. Je kunt sommige 3D modellen op je telefoon in augmented reality zien. Wat we met deze experimenten willen bereiken zijn manieren om leren effectiever en aantrekkelijk te maken voor het onderwijs van nu en de toekomst.</h2></span>
     </div>
-    <div class="sect1">
-      <model-viewer 
-      id="redo"
-      src="Assets/redo.glb"
-      shadow-intensity="1"
-      camera-controls
-      auto-rotate 
-      ar-modes="webxr scene-viewer quick-look"
-      ar>
-      <button slot="hotspot-1" data-position="0 0.5 0" data-normal="0 0 1">
-      <div id="annotation"><p>Voorbeeld van annotatie positie: 0 0.5 0</p></div>
-      </button>
 
-      <button slot="hotspot-2" data-position="0 0.1 0" data-normal="0 0 1"></button>
-    </model-viewer> <div class="caption"><p>3D model door Arie Vissers, docent Mechatronica</p></div>
-</div>
-<div class="sect2">
+
+
+   <button class="sun"></button> <div id="deelnemers" class="collapsible">Deelnemers
+   <br>
+    
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" id="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="20px" height="29.2px" viewBox="0 0 20 29.2" style="enable-background:new 0 0 20 29.2;" xml:space="preserve">
+    <style type="text/css">
+      .st01{fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
+      .st02{fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;}
+    </style>
+    <g>
+      <line class="st01" x1="10" y1="1.2" x2="10" y2="27.2"/>
+      <polyline class="st02" points="18,15.4 10,27.2 2.1,15.4 	"/>
+    </g>
+    </svg>
+
+
+
+   </div> 
+   <ul><a href="Elmo.html"><li>Elmo Arrias</li></a><a href="Tim.html"><li>Tim Waals</li></a><a href="Peter.html"><li>Peter Kraneburg</li></a><a href="Linda.html"><li>Linda van Hout</li></a>
+    <a href="Joyce.html"><li>Joyce Küchler-Rasenberg</li></a><a href="Joost.html"><li>Joost van Puijenbroek</li></a><a href="Ibe.html"><li>Ibe van Aken</li></a><a href="Kees.html"><li>Kees Vrieswijk</li></a><a href="Rudy.html"><li>Rudy Schuurmans</li></a><a href="Guus.html"><li>Guus Vanhautem</li></a><a href="Wouter.html"><li>Wouter van Ginneken</li></a><a href="Erdinc.html"><li>Erdinç Sacan</li></a><li>Maik Backx</li><li>Mark Somers</li><li>Daan Rutjens</li><li>Jelle Tiepel</li><br></ul>
+        
+
+<div class="sect1">
     <model-viewer 
     id="reactor"
     src="Assets/modelzover/Reactor_test_assembly.gltf"
+    ios-src="Assets/Reactor_test_assembly.usdz"
     shadow-intensity="1"
     camera-controls
     auto-rotate 
     ar-modes="webxr scene-viewer quick-look"
-    ar></model-viewer>
-    <div class="caption"><p>3D model door Elmo Arrias, docent Procestechniek </p></div>
+    ar>
+
+    <div class="progress-bar" slot="progress-bar">
+      <div class="update-bar"></div>
+    </div>
+  </model-viewer>
+    <div class="caption"><p>3D model van een glasreactor door Elmo Arrias, docent Procestechniek </p></div>
+</div>
+<div class="sect2">
+     
+  <!--<model-viewer 
+  id="piano"
+  src="Assets/Piano.glb"
+  shadow-intensity="1"
+  camera-controls
+  ar-modes="webxr scene-viewer quick-look"
+  ar>
+  <div class="progress-bar" slot="progress-bar">
+    <div class="update-bar"></div>
+  </div>
+</model-viewer> --> 
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/636205617?h=6dbd6eb42a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Drawing in VR"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div class="caption"><p>Tekenen in VR door Wouter van Ginneken, docent ICT & Mediatechnologie</p></div>
 </div>
 <div class="sect3">
     <model-viewer
     id="oog"
-    src="Assets/anatomy_of_the_eye/scene.gltf"
+    src="Assets/pick_and_place.glb"
+    ios-src="Assets/pick_and_place2.usdz"
     camera-controls
     auto-rotate 
     ar-modes="webxr scene-viewer quick-look"
-    ar></model-viewer>
-    <div class="caption"><p>Anatomisch model van het oog</p></div>
+    ar>
+    <button class="Hotspot" slot="hotspot-1" data-position="-0.15655563476990242m 0.2469671170466446m 0.08721304089063653m" data-normal="0.01964673213187589m 0.999806984330745m 8.634221022283836e-10m" data-visibility-attribute="visible">
+      <div class="annotation">Grijper</div>
+  </button><button class="Hotspot" slot="hotspot-3" data-position="-0.217583278488015m 0.059593882265420894m -0.23899767397371335m" data-normal="-0.7270560053623804m 0.6865781565608524m 1.2090309811011341e-8m" data-visibility-attribute="visible">
+      <div class="annotation">Lopende band</div>
+  </button>
+  
+    <div class="progress-bar" slot="progress-bar">
+      <div class="update-bar"></div>
+    </div>
+  </model-viewer>
+    <div class="caption"><p>3D model "pick and place"-installatie door Arie Vissers, docent Mechatronica</p></div>
 </div>
 <div class="sect4">
   <div style="position: relative !important; padding-bottom: 56.25% !important; height: 0px !important; overflow: hidden !important; max-width: 100% !important;"><iframe src="https://player.hihaho.com/embed/5fe44660-09cf-4b72-a50a-4193583842d9" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" style="position: absolute !important; top: 0px !important; left: 0px !important; width: 100% !important; height: 100% !important;"></iframe></div>
   <div class="caption"><p>Interactieve film over een cylindermeting van Tim Waals, docent Autotechniek</p></div>
 </div>
+<div class="sect5">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WuUPqCvX0AA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <div class="caption">Bekijk de video voor meer informatie </div>
+</div>
+
 <div id="footer">
 
-   <div class="svg"><a href="https://mind-labs.eu"><svg class="mindlabs" version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   <div class="svg" ><a href="https://mind-labs.eu"><svg class="mindlabs" version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="225px" height="150px" viewBox="0 0 437.5 245" style="enable-background:new 0 0 437.5 245;" xml:space="preserve">
   
     <polyline class="st0" points="81.2,60.4 156.5,16.3 241.2,6.9 278.6,60.8 214.6,166.8 278,239.5 338.1,167.3 "/>
@@ -109,19 +164,126 @@
       C234.2,10.8,237.3,13.9,241.2,13.9L241.2,13.9z"/></svg></a>  </div>
       <div class="svg"><a href="https://www.roctilburg.nl"><svg class="roc" enable-background="new 0 0 117 12.3" height="175" viewBox="0 0 117 12.3" width="250" xmlns="http://www.w3.org/2000/svg"><path class="R" d="m0 12.1v-11.9h3.9c1.2 0 2.2.1 3 .7 1 .8 1.6 1.9 1.6 3.3 0 1.9-1 3.3-2.7 3.8l2.9 4.1h-3.6l-2.2-3.8v3.8zm3.4-6.4c1.4 0 2.1-.3 2.1-1.4 0-.9-.6-1.3-1.9-1.3h-.7v2.8z"/><path class="O" d="m14.8 1.8c1.2-1.1 2.7-1.8 4.3-1.8s3.1.7 4.2 1.8c1.2 1.2 1.9 2.7 1.9 4.3s-.6 3.2-1.7 4.3c-1.1 1.2-2.7 1.9-4.3 1.9-1.8 0-3.2-.7-4.4-1.9-1.1-1.2-1.7-2.7-1.7-4.4-.1-1.6.5-3.1 1.7-4.2m4.2 7.5c1.7 0 3.1-1.3 3.1-3.3 0-1.8-1.3-3.1-3-3.1-1.8 0-3.1 1.3-3.1 3.1-.1 1.9 1.5 3.3 3 3.3z"/><path class="C" d="m35.5 12.3c-1.8 0-3.2-.7-4.4-1.9-1.1-1.2-1.7-2.7-1.7-4.4 0-1.6.7-3.1 1.8-4.2 1.2-1.1 2.6-1.8 4.3-1.8 2.8 0 5.1 1.8 5.9 4.8h-3.1c-.7-1.1-1.6-1.8-2.8-1.8-1.8 0-3.1 1.3-3.1 3.1 0 1.9 1.4 3.3 3.1 3.3 1.1 0 2.1-.6 2.8-1.7h3.1c-.8 2.9-3.1 4.6-5.9 4.6"/><path class="t" d="m47.8 12.1v-10.2h-2.2v-1.7h6.1v1.7h-2.2v10.2z"/><path class="i" d="m55.9.2h1.7v11.9h-1.7z"/><path class="l" d="m61.9 12.1v-11.9h1.7v10.3h3.9v1.6z"/><path class="b" d="m77.3 3.4c0 1-.4 1.8-1.2 2.2 1.1.4 1.9 1.5 1.9 2.9 0 1.1-.4 2.1-1.2 2.8-.9.8-1.9.9-3.1.9h-2.8v-12h2.6c2.5 0 3.8 1.1 3.8 3.2m-3.3 7.1c1.6 0 2.3-.6 2.3-1.8 0-1.3-.8-2-2.3-2h-1.3v3.9h1.3zm-.8-5.3c1.7 0 2.4-.4 2.4-1.8 0-1.1-.7-1.7-2.1-1.7h-.9v3.3h.6z"/><path class="u" d="m83.9.2v7.6c0 2 .4 2.9 2.1 2.9 1.6 0 2-.9 2-2.9v-7.6h1.7v7.6c0 1.2-.1 2.2-.6 3-.7 1.1-1.8 1.6-3.1 1.6-1.4 0-2.6-.4-3.2-1.6-.7-.9-.7-1.9-.7-3v-7.6z"/><path class="r" d="m93.9 12.1v-11.9h3.4c2.9 0 4.3 1.3 4.3 3.9 0 1.9-1.3 3.3-3.3 3.4l3.3 4.6h-2.1l-3.9-5.6v5.5h-1.8zm2.6-5.8c2.3 0 3.6-.8 3.6-2.3s-1-2.2-3.1-2.2h-1.3v4.6z"/><path class="g" d="m117 6.1c-.2 3.8-2.7 6.2-6 6.2-1.8 0-3.3-.7-4.4-2-1-1.1-1.6-2.6-1.6-4.2s.7-3.2 1.9-4.3c1.1-1.1 2.6-1.7 4.3-1.7 2.4 0 4.3 1.2 5.2 3.2h-2.1c-.8-1-1.9-1.6-3.2-1.6-1.1 0-2.1.4-2.9 1.2-.9.9-1.3 2-1.3 3.1 0 1.2.4 2.3 1.2 3.2s1.9 1.3 3 1.3c1.8 0 3.2-1 4.1-2.9h-5.3v-1.5z"/>
     </svg></a></div>
+    <div class="svg"> <a href="https://www.instagram.com/pitvanroctilburg/?utm_medium=copy_link"> <svg class="instagram" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="30.6px" height="175px" viewBox="0 0 30.6 30.6" style="enable-background:new 0 0 30.6 30.6;" xml:space="preserve">
+   <style type="text/css">
+     .st0{fill:url(#SVGID_1_);}
+     .st1{fill:url(#SVGID_00000034059016310992093070000009086971230026657716_);}
+     .st2{fill:#FFFFFF;}
+   </style>
+   <radialGradient id="SVGID_1_" cx="-267.7245" cy="-308.2973" r="14.268" gradientTransform="matrix(0 -1.982 -1.8439 0 -559.8408 -498.859)" gradientUnits="userSpaceOnUse">
+     <stop  offset="0" style="stop-color:#FFDD55"/>
+     <stop  offset="0.1" style="stop-color:#FFDD55"/>
+     <stop  offset="0.5" style="stop-color:#FF543E"/>
+     <stop  offset="1" style="stop-color:#C837AB"/>
+   </radialGradient>
+   <path class="st0" d="M15.3,1c-6,0-7.7,0-8,0c-1.2,0.1-2,0.3-2.8,0.7C3.8,2.1,3.3,2.5,2.8,3C1.9,3.9,1.4,5.1,1.2,6.4
+     C1.1,7.1,1.1,7.2,1,10.7c0,1.1,0,2.6,0,4.6c0,6,0,7.7,0,8c0.1,1.2,0.3,1.9,0.7,2.8c0.8,1.6,2.2,2.7,3.9,3.2c0.6,0.2,1.2,0.2,2.1,0.3
+     c0.4,0,4,0,7.6,0s7.2,0,7.6,0c1,0,1.5-0.1,2.1-0.3c1.7-0.4,3.1-1.6,3.9-3.2c0.4-0.8,0.6-1.6,0.7-2.7c0-0.2,0-4.2,0-8.1
+     c0-3.9,0-7.8,0-8.1c-0.1-1.1-0.3-1.9-0.7-2.7c-0.3-0.7-0.7-1.2-1.2-1.7c-0.9-0.9-2.1-1.5-3.5-1.6C23.5,1.1,23.4,1,20,1H15.3z"/>
+   <radialGradient id="SVGID_00000028319274185899319320000002368498498945913002_" cx="338.1478" cy="1.1732" r="14.268" gradientTransform="matrix(0.1739 0.8687 3.5818 -0.7172 -66.7531 -289.8246)" gradientUnits="userSpaceOnUse">
+     <stop  offset="0" style="stop-color:#3771C8"/>
+     <stop  offset="0.128" style="stop-color:#3771C8"/>
+     <stop  offset="1" style="stop-color:#6600FF;stop-opacity:0"/>
+   </radialGradient>
+   <path class="st3" style="fill:url(#SVGID_00000028319274185899319320000002368498498945913002_);" d="M15.3,1c-6,0-7.7,0-8,0
+     c-1.2,0.1-2,0.3-2.8,0.7C3.8,2.1,3.3,2.5,2.8,3C1.9,3.9,1.4,5.1,1.2,6.4C1.1,7.1,1.1,7.2,1,10.7c0,1.1,0,2.6,0,4.6c0,6,0,7.7,0,8
+     c0.1,1.2,0.3,1.9,0.7,2.8c0.8,1.6,2.2,2.7,3.9,3.2c0.6,0.2,1.2,0.2,2.1,0.3c0.4,0,4,0,7.6,0s7.2,0,7.6,0c1,0,1.5-0.1,2.1-0.3
+     c1.7-0.4,3.1-1.6,3.9-3.2c0.4-0.8,0.6-1.6,0.7-2.7c0-0.2,0-4.2,0-8.1c0-3.9,0-7.8,0-8.1c-0.1-1.1-0.3-1.9-0.7-2.7
+     c-0.3-0.7-0.7-1.2-1.2-1.7c-0.9-0.9-2.1-1.5-3.5-1.6C23.5,1.1,23.4,1,20,1H15.3z"/>
+   <path class="st2" d="M15.3,4.8c-2.9,0-3.2,0-4.3,0.1C9.8,4.9,9.1,5.1,8.4,5.3C7.7,5.6,7.1,5.9,6.5,6.5C6,7.1,5.6,7.7,5.3,8.4
+     C5.1,9.1,4.9,9.8,4.8,11c-0.1,1.1-0.1,1.5-0.1,4.3s0,3.2,0.1,4.3c0.1,1.1,0.2,1.9,0.5,2.6c0.3,0.7,0.6,1.3,1.2,1.9
+     c0.6,0.6,1.2,0.9,1.9,1.2c0.7,0.3,1.4,0.4,2.6,0.5c1.1,0.1,1.5,0.1,4.3,0.1c2.9,0,3.2,0,4.3-0.1c1.1-0.1,1.9-0.2,2.6-0.5
+     c0.7-0.3,1.3-0.6,1.9-1.2c0.6-0.6,0.9-1.2,1.2-1.9c0.3-0.7,0.4-1.4,0.5-2.6c0.1-1.1,0.1-1.5,0.1-4.3s0-3.2-0.1-4.3
+     c-0.1-1.1-0.2-1.9-0.5-2.6c-0.3-0.7-0.6-1.3-1.2-1.9c-0.6-0.6-1.2-0.9-1.9-1.2c-0.7-0.3-1.4-0.4-2.6-0.5C18.5,4.8,18.2,4.8,15.3,4.8
+     L15.3,4.8z M14.4,6.7c0.3,0,0.6,0,0.9,0c2.8,0,3.1,0,4.3,0.1c1,0,1.6,0.2,2,0.4c0.5,0.2,0.8,0.4,1.2,0.8c0.4,0.4,0.6,0.7,0.8,1.2
+     c0.1,0.4,0.3,0.9,0.4,2c0.1,1.1,0.1,1.4,0.1,4.3s0,3.1-0.1,4.3c0,1-0.2,1.6-0.4,2c-0.2,0.5-0.4,0.8-0.8,1.2
+     c-0.4,0.4-0.7,0.6-1.2,0.8c-0.4,0.1-0.9,0.3-2,0.4c-1.1,0.1-1.4,0.1-4.3,0.1c-2.8,0-3.1,0-4.3-0.1c-1,0-1.6-0.2-2-0.4
+     c-0.5-0.2-0.8-0.4-1.2-0.8c-0.4-0.4-0.6-0.7-0.8-1.2c-0.1-0.4-0.3-0.9-0.4-2c-0.1-1.1-0.1-1.4-0.1-4.3s0-3.1,0.1-4.3
+     c0-1,0.2-1.6,0.4-2c0.2-0.5,0.4-0.8,0.8-1.2s0.7-0.6,1.2-0.8c0.4-0.1,0.9-0.3,2-0.4C12,6.7,12.4,6.7,14.4,6.7L14.4,6.7z M20.9,8.4
+     c-0.7,0-1.3,0.6-1.3,1.3c0,0.7,0.6,1.3,1.3,1.3s1.3-0.6,1.3-1.3S21.6,8.4,20.9,8.4L20.9,8.4z M15.3,9.9c-3,0-5.4,2.4-5.4,5.4
+     s2.4,5.4,5.4,5.4c3,0,5.4-2.4,5.4-5.4S18.3,9.9,15.3,9.9L15.3,9.9z M15.3,11.8c1.9,0,3.5,1.6,3.5,3.5c0,1.9-1.6,3.5-3.5,3.5
+     c-1.9,0-3.5-1.6-3.5-3.5C11.8,13.4,13.4,11.8,15.3,11.8z"/>
+   </svg></a>
+   
+   </div>
     </div>
+    
+  
+    
 </body>
 
 
 <!-- Loads <model-viewer> for modern browsers: -->
-<script type="module"
+ <!--<script type="module"
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>-->
+
+<script type="module">
+  const body = document.body;
+  let loaded = false;
+
+  const onInteraction = () => {
+    if (loaded === true) {
+      return;
+    }
+    loaded = true;
+
+    const modelViewer = document.createElement('script'); 
+    modelViewer.type = 'module';
+    modelViewer.src = './Packages/@google/model-viewer/dist/model-viewer.min.js'; 
+    body.appendChild(modelViewer);
+
+    const focusVisible = document.createElement('script');
+    focusVisible.src = './Packages/focus-visible/dist/focus-visible.js'; 
+    body.appendChild(focusVisible);
+  };
+
+  body.addEventListener('mouseover', onInteraction, {once:true});
+  body.addEventListener('touchmove', onInteraction, {once:true});
+  //body.addEventListener('scroll', onInteraction, {once:true});
+  body.addEventListener('keydown', onInteraction, {once:true});
+
+  const onProgress = (event) => {
+    const progressBar = event.target.querySelector('.progress-bar');
+    const updatingBar = event.target.querySelector('.update-bar');
+    updatingBar.style.width = `${event.detail.totalProgress*100}%`;
+    if (event.detail.totalProgress == 1) {
+      progressBar.classList.add('hide');
+    }
+  };
+
+  //document.querySelector('#piano').addEventListener('progress', onProgress);
+  document.querySelector('#reactor').addEventListener('progress', onProgress);
+  document.querySelector('#oog').addEventListener('progress', onProgress);
+
+
+</script>
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var arrow = document.getElementById("arrow");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+      arrow.style.transform = "rotateZ(0deg)";
+    } else {
+      arrow.style.transform = "rotateZ(180deg)";
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
 </script>
 
 <!-- Loads <model-viewer> for old browsers like IE11: -->
-<script nomodule
-    src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-</script>
+<!--<script 
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script> -->
 
 
 </html>

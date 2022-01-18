@@ -6,6 +6,7 @@
   "scripts": {
     "test": "test",
     "dev": "parcel index.html",
+    "start": "parcel serve index.html",
     "build": "parcel build index.html"
 
   },
@@ -28,5 +29,10 @@
   "homepage": "https://github.com/wvg88/KIT#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "@google/model-viewer": "^1.7.2",
+    "focus-visible": "^5.2.0",
+    "http-server": "^13.0.2"
   }
 }

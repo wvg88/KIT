@@ -1,38 +1,127 @@
 @media only screen and (max-width: 600px) {
     #header{margin: 5% 5% 15% !important;}
-    .sect1{margin: 0% 0% 15% !important; width:100% !important;}
-    .sect2{margin: 0% 0% 15% !important;; width:100% !important;}
-    .sect3{margin: 0% 0% 15% !important; width: 100% !important;}
-    .sect4{margin: 0% 0% 15% !important; width: 100% !important;}
-    .caption{margin: 5% !important; text-align:left !important;}
+    h1{font-size:5rem !important; word-break:break-all;}
+    h2{font-size:1.1rem !important;}
+    .sect1{margin: 0% 0% 25% !important; width:100% !important;}
+    .sect2{margin: 0% 0% 25% !important; width:100% !important;}
+    .sect3{margin: 0% 0% 25% !important; width: 100% !important;}
+    .sect4{margin: 0% 0% 25% !important; width: 100% !important;}
+    .sect5{margin: 0% 0% 25% !important; width:100% !important;}
+    .caption{margin: 5% !important; text-align: left !important;}
     #footer{height:400px !important;}
+    #deelnemers{top:1% !important; font-size: 1.1rem !important;}
+    #arrow_back{width:10%; top:1% !important; z-index: 10;}
+    ul{right:3% !important;font-size:0.8rem;letter-spacing: 0.1em; padding:3px 1px 1px 1px !important;}
+    .Pont{height:300px;width:150px !important;}
   }
 
 html{
-    width:100%;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.1em;
+    width:100%; 
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+
+
 
 }
 body{
     margin: 0 !important;
 }
  h1{
+     font-family: neue-haas-grotesk-display, sans-serif;
      font-size:5rem;
      letter-spacing:0.2em;
-     font-weight: 800;
+     font-weight: 600;
      text-transform: uppercase;
  }
  h2{
      color:#919191;
      font-size:1.3rem;
      line-height: 1.4em;
-     font-weight:100;
-     letter-spacing: 0.05em;
+     font-weight: 50;
+     letter-spacing: 0.04em;
+ }
+ h4{
+   color:#555;
+   text-decoration: underline;
+   font-size:1.3rem;
+   line-height:1.4em;
+   font-weight:200;
+   letter-spacing: 0.05em;
+ }
+ a{
+   text-decoration: none;
+   
+ }
+ .no-wrap{
+   max-width:900px;
+ }
+ #KIT{
+  color:fuchsia;
+  text-decoration: underline;
+  display:inline;
+  white-space: nowrap;
+
+ }
+ #KIT > a{
+   color:fuchsia;
  }
  #header{
      max-width: 900px;
      margin:10% 20%;
+ }
+#deelnemers{
+  z-index: 10;
+  position:fixed;
+  right:10%;
+  top:4%;
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 2em;
+}
+ .collapsible{
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+ }
+ .sun{
+  z-index: 10;
+  width:80px;
+  height:80px;
+  border-radius: 40px;
+  position: fixed;
+  right:3%;
+  top:3%;
+ }
+ #arrow{
+   transition: transform 0.2s ease-out;
+ }
+ #arrow_back{
+   position:fixed;
+   top:10%;
+   left:10%; 
+ }
+ #arrow:active{
+  transform:rotateZ(180);
+  
+ }
+ ul{
+   z-index: 10;
+   position: fixed;
+   top:100px;
+   right:6%;
+   padding:10px 20px 3px 20px;
+   list-style: none;
+   line-height: 1.5em;
+   background-color:palegreen;
+   max-height: 0;
+   width:fit-content;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+   text-align:center;
+ }
+ ul:active{
+   background-color: darkturquoise;
  }
 
 .sect1{
@@ -40,44 +129,135 @@ body{
     margin:10% 20% 0%;
     width:900px;
     height:600px;
-}
-.caption{
     text-align: right;
 }
-#redo{
-    width:100%;
-    height:100%;
+.sect1 > img{
+  width:fit-content;
 }
+
 .sect2{
-    margin: 10% 50%;
-    width:900px;
-    height:600px;
+  position: relative;
+  margin: 10% 50%;
+  width:800px;
 }
-.sect2 > .caption{
-    text-align:left !important;
+.sect2 > img{
+  width: 100%;
 }
-#reactor{
-    background:burlywood;
-    width:100%;
-    height:100%;
+.vp-title {
+display:none !important;
 }
+
+
 .sect3{
-    margin: 10% 10%;
-    height:600px;
-    width:900px;
+  margin: 10% 10%;
+  height:600px;
+  width:900px;
+  text-align: right;
+}
+.sect3 > img{
+  width: 100%;
 }
 .sect4{
-    margin: 10% 20%;
-    height:600px;
-    width:900px;
+  margin: 0% 20%;
+  height:600px;
+  width:900px;
 }
-.sect4 > .caption{
-    text-align:left !important;
+
+.sect5{
+  margin: 10% 40% 0%;
+  height: 500px;
+  width: 900px;
 }
-#oog{
-    background-color: darkcyan;
+
+
+    /* This keeps child nodes hidden while the element loads, except the poster */
+    :not(:defined) > :not(.poster) {
+        display: none;
+      }
+  
+      :defined > .poster > .pre-prompt {
+        display: none;
+      }
+  
+      /* This CSS should always be used at minimum for any slotted poster */
+      .poster {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+  
+      @keyframes wiggle {	
+        10%, 12% { transform: translateX(-25px); }	 
+        30%, 32% { transform: translateX(25px); }	
+        0%, 45%, 100% { transform: translateX(0%); }
+      }	
+      
+      @keyframes fade {	
+        5%, 40% {	opacity: 1; }	
+        0%, 45%, 100% {	opacity: 0; }	 
+      }
+  
+      .pre-prompt {
+        pointer-events: none;
+        animation-name: wiggle, fade;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+  
+      .progress-bar {
+        display: block;
+        width: 33%;
+        height: 5%;
+        max-height: 2%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        border-radius: 25px;
+        box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5), 0px 0px 5px 1px rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.9);
+      }
+   
+      .progress-bar.hide {
+        visibility: hidden;
+        transition: visibility 0.3s;
+      }
+   
+      .update-bar {
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 0%;
+        height: 100%;
+        border-radius: 25px;
+        float: left;
+        transition: width 0.3s;
+      }
+  
+#piano{
     width:100%;
     height:100%;
+}
+
+#oog{
+    background-color:lightseagreen;
+    width:100%;
+    height:100%;
+}
+#reactor{
+  background:burlywood;
+  width:100%;
+  height:100%;
+}
+#hart{
+  background:cornflowerblue;
+  width:100%;
+  height: 100%;
 }
 
 model-viewer{
@@ -92,26 +272,39 @@ button{
     height: 20px;
     border-radius: 10px;
     border: none;
-    background-color: blue;
+    background-color: rgb(255, 100, 100);
     box-sizing: border-box;
   }
-button[slot="hotspot-1"]{
-    --min-hotspot-opacity: 0;
-    border-radius: 10px;
-    border:none;
-    background-color: red;
+  .button:not(:defined){
+      background:transparent;
+      border:4px solid rgb(255,100,100);
+      width:20px;
+      height:20px;
   }
 
-button[slot="hotspot-2"]{
-    background-color:blue;
-}
 
-#annotation{
-    background-color: #fff;
+.annotation{
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px;
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-family: Futura, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    left: calc(100% + 1em);
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
     position: absolute;
-    transform: translate(10px, 10px);
-    border-radius: 10px;
-    padding: 10px;
+    top: 50%;
+    width: max-content;
+  }
+  .annotation-wrapper ::slotted(*){
+      transition: opacity 0.3s;
+  }
+  .annotation-wrapper.hide ::slotted(*){
+      opacity:var(--min-hotspot-opacity,0.0) !important;
   }
     /* This keeps child nodes hidden while the element loads */
     :not(:defined) > * {
@@ -119,12 +312,13 @@ button[slot="hotspot-2"]{
       }
 
   #footer{
+        top:25vh;
+        
         background:rgb(241, 241, 241);
         text-align: center;
         position:relative;
         height:300px;
         width:100%;
-        margin: 0% 0% -10%;
     }
     #footer > .svg {
         display:inline-flex;
@@ -153,3 +347,13 @@ button[slot="hotspot-2"]{
       .roc:hover .R{fill:rgb(253, 0, 164);}
       .roc:hover .O{fill:rgb(253, 0, 164);}
       .roc:hover .C{fill:rgb(253, 0, 164);}
+
+      .instagram .st0{fill:none;}
+      .instagram .st1{fill:none;}
+      .instagram .st2{fill:#777;}
+      .instagram .st3{fill:none !important;}
+
+      .instagram:hover .st0{fill:url(#SVGID_1_);}
+      .instagram:hover .st1{fill:url(#SVGID_00000034059016310992093070000009086971230026657716_);}
+      .instagram:hover .st2{fill:#FFF;}
+      .instagram:hover .st3{fill:url(#SVGID_00000028319274185899319320000002368498498945913002_);}
